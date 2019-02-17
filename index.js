@@ -20,10 +20,10 @@ function getAddress(node){
 app.get('/api/v1/invoice', (req, res) => {
     var node = parent.derivePath("m/0'/" + String(index));
     index++;
-    //const address = "183hmJGRuTEi2YDCWy5iozY8rZtFwVgahM";
     //const address = "n14trMejKPL8HMBj2EhQkctsDfhMXHMtkJ";
     const address = getAddress(node);
-    const ret_val = {invoice: 'bitcoin:' + address + "?amount=" + req.query.amount};
+    const ret_val = {invoice: 'bitcoin:' + address + "?amount=" + req.query.amount,
+                    btc_address: address};
     res.json(ret_val);
 });
 
