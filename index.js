@@ -32,6 +32,7 @@ function getAddress(node){
 
 app.get('/api/v1/invoice', (req, res) => {
     var node = parent.derivePath(String(index));
+    console.log("index:" + index);
     index++;
     fs.writeFile(settings.index_file, index, function(err) {
         if(err){
