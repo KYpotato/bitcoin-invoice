@@ -21,6 +21,7 @@ function getAddress(node){
 app.get('/api/v1/invoice', (req, res) => {
     var node = parent.derivePath(String(index));
     index++;
+    console.log("index:" + index);
     //const address = test_address;
     const address = getAddress(node);
     const ret_val = {invoice: 'bitcoin:' + address + "?amount=" + req.query.amount,
