@@ -21,7 +21,7 @@ MongoClient.connect(settings.mongodb_uri, function(err, client){
     if(err) { return console.dir(err); }
     console.log("connected to db");
     const db = client.db(settings.indexdb);
-    db.collection('index', function(err, collection){
+    db.collection('wallet_index', function(err, collection){
         if(err){ return console.dir(err); }
         /* index   :next wallet index */
         collection.find().toArray(function(err, items){
@@ -57,7 +57,7 @@ app.get('/api/v1/invoice', (req, res) => {
         if(!err){
             //use db
             const db = client.db(settings.indexdb);
-            db.collection("index", function(err, collection){
+            db.collection("wallet_index", function(err, collection){
                 if(!err){
                     //update
                     var filter = {};               
