@@ -47,3 +47,4 @@ app.get('/api/v1/invoice', (req, res) => {
 });
 
 app.listen(settings.port, () => console.log('Listening on port ' + settings.port));
+
