@@ -12,9 +12,7 @@ const NETWORK = bitcoin.networks.testnet;
 const pubKey = settings.pubkey;
 const test_address = settings.test_address;
 
-console.log(settings.index_file);
-
-var index;
+var index = 0;
 
 /* get index info from db */
 MongoClient.connect(settings.mongodb_uri, function(err, client){
