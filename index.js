@@ -12,6 +12,7 @@ const pubKey = settings.pubkey;
 const test_address = settings.test_address;
 
 var index = process.init_index;
+console.log("typeof index:" + typeof(index));
 var parent = bip32.fromBase58(pubKey, NETWORK);
 
 function getAddress(node){
