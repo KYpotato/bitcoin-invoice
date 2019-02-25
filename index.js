@@ -45,8 +45,4 @@ app.get('/api/v1/invoice', (req, res) => {
     res.json(ret_val);
 });
 
-<<<<<<< HEAD
 app.listen(settings.port, () => console.log('Listening on port ' + settings.port));
-=======
-app.listen(process.env.PORT, () => console.log('Listening on port ' + process.env.PORT));
->>>>>>> change port number
