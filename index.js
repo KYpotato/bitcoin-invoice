@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const settings = require('./settings');
 app.use(express.static('web'));
-var fs = require('fs');
+var MongoClient = require('mongodb').MongoClient;
 
 const bitcoin = require('bitcoinjs-lib');
 const bip32 = require('bip32');
