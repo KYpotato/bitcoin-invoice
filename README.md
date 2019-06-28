@@ -8,6 +8,8 @@ node.js npm
 
 ## Usage
 YOUR_SERVER_ADDRESS/api/v1/invoice?amount=AMOUNT_SATOSHI  
+return  
+{"invoice":"bitcoin:BITCOIN_ADDRESS?amount=AMOUNT_SATOSHI","btc_address":"BITCOIN_ADDRESS"}
 
 ## install
 `git clone https://github.com/KYpotato/bitcoin-invoice.git`  
