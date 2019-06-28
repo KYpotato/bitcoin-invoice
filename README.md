@@ -7,7 +7,7 @@ webAPI returns invoice of BTC
 node.js npm  
 
 ## Usage
-YOUR_SERVER_ADDRESS/api/v1/invoice  
+YOUR_SERVER_ADDRESS/api/v1/invoice?amount=AMOUNT_SATOSHI  
 
 ## install
 `git clone https://github.com/KYpotato/bitcoin-invoice.git`  
